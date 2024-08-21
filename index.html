@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body-container">
+        <div class="welcome">Welcome to Taada</div>
+        <div class="container">
+            <div class="tab-container">
+                <button class="tab-link active" onclick="openTab(event, 'Login')">Login</button>
+                <button class="tab-link" onclick="openTab(event, 'SignUp')">Sign Up</button>
+            </div>
+
+            <div id="Login" class="tab-content active">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div id="loginMessage"></div>
+            </div>
+
+            <div id="SignUp" class="tab-content">
+                <h2>Sign Up</h2>
+                <form id="signUpForm">
+                    <label for="newEmail">Email:</label>
+                    <input type="email" id="newEmail" name="newEmail" required>
+                    
+                    <label for="newPassword">Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="sex">Sex:</label>
+                    <input type="text" id="sex" name="sex" required>
+                    
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                    
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div id="signUpMessage"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script_login.js"></script>
+    <script src="script_signup.js"></script>
+</body>
+</html>
+
